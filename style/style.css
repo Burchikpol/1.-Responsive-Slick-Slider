@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "TrumpGothicEastW01-Bold";
+  src: url("//db.onlinewebfonts.com/t/2a97ee8e9e3ab9853429d31762897e66.eot");
+  src: url("//db.onlinewebfonts.com/t/2a97ee8e9e3ab9853429d31762897e66.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2a97ee8e9e3ab9853429d31762897e66.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2a97ee8e9e3ab9853429d31762897e66.woff") format("woff"), url("//db.onlinewebfonts.com/t/2a97ee8e9e3ab9853429d31762897e66.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2a97ee8e9e3ab9853429d31762897e66.svg#TrumpGothicEastW01-Bold") format("svg"); }
+
 body {
   padding: 40px; }
 
@@ -25,7 +30,7 @@ body {
     margin-top: 53px;
     opacity: 0.1; }
   .main-slider .content h1 {
-    font-family: Trump Gothic East;
+    font-family: 'TrumpGothicEastW01-Bold';
     text-transform: uppercase;
     color: #c74c4c;
     font-size: 102px;
