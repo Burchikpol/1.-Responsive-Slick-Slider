@@ -99,3 +99,29 @@ body {
         content: '0';
     }
 }
+
+/*slide-number*/
+
+
+
+.slide-number:before {
+    content: '0';
+    font-family: Lato;
+    color:  rgba(244, 244, 244, 0.45);
+    font-size: 118px;/* Approximation due to font substitution */
+    font-weight: 700;
+    line-height: 65px;/* Approximation due to font substitution */
+    text-align: right;
+    
+}
+
+.slide-number {
+    font-family: Lato;
+    color:  rgba(244, 244, 244, 0.45);
+    font-size: 118px;/* Approximation due to font substitution */
+    font-weight: 700;
+    line-height: 65px;/* Approximation due to font substitution */
+    text-align: right;
+    position: absolute;
+    right: -10px;
+}
