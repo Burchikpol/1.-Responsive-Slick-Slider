@@ -4,3 +4,7 @@ $(document).ready(function(){
       arrows: false,
     });
   });
+
+ $(".main-slider").on('afterChange', function(event, slick, currentSlide){
+     $(".slide-number").text(currentSlide + 1);
+  });
