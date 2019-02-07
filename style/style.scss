@@ -36,9 +36,15 @@ body {
     }
 
     .content {
-        .stars {
-            margin-top: 53px;
-            opacity: 0.1;
+        .star-icons {
+            margin: 53px 0 0 52px;
+            
+            path {
+                transition-duration: 0.3s;
+            }
+            #Polygon_2:hover {
+                fill:  #c74c4c;
+            }
         }
 
         h1 {
@@ -78,6 +84,14 @@ body {
             text-align: left;
             letter-spacing: 2px;
             margin: 0;
+            outline: none;
+            transition-duration: 0.3s;
+
+            &:hover {
+                color:  #ac8f8f;
+
+            }
+            
         }
     }
 }
@@ -107,7 +121,7 @@ body {
 .slide-number:before {
     content: '0';
     font-family: Lato;
-    color:  rgba(244, 244, 244, 0.45);
+    color:  rgba(244, 244, 244, 0.60);
     font-size: 118px;/* Approximation due to font substitution */
     font-weight: 700;
     line-height: 65px;/* Approximation due to font substitution */
@@ -117,11 +131,12 @@ body {
 
 .slide-number {
     font-family: Lato;
-    color:  rgba(244, 244, 244, 0.45);
+    color:  rgba(244, 244, 244, 0.60);
     font-size: 118px;/* Approximation due to font substitution */
     font-weight: 700;
     line-height: 65px;/* Approximation due to font substitution */
     text-align: right;
     position: absolute;
     right: -10px;
+    bottom: 10px;
 }

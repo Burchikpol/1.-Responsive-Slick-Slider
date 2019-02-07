@@ -26,9 +26,14 @@ body {
     width: 100%;
     height: auto;
     padding: 25px; }
-  .main-slider .content .stars {
-    margin-top: 53px;
-    opacity: 0.1; }
+  .main-slider .content .star-icons {
+    margin: 53px 0 0 52px; }
+    .main-slider .content .star-icons path {
+      -webkit-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+    .main-slider .content .star-icons #Polygon_2:hover {
+      fill: #c74c4c; }
   .main-slider .content h1 {
     font-family: 'TrumpGothicEastW01-Bold';
     text-transform: uppercase;
@@ -65,7 +70,13 @@ body {
     /* Приближение из-за подстановки шрифтов */
     text-align: left;
     letter-spacing: 2px;
-    margin: 0; }
+    margin: 0;
+    outline: none;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s; }
+    .main-slider .content a:hover {
+      color: #ac8f8f; }
 
 /*dots style*/
 .slick-dots li button:nth-child(1) {
@@ -86,7 +97,7 @@ body {
 .slide-number:before {
   content: '0';
   font-family: Lato;
-  color: rgba(244, 244, 244, 0.45);
+  color: rgba(244, 244, 244, 0.6);
   font-size: 118px;
   /* Approximation due to font substitution */
   font-weight: 700;
@@ -96,7 +107,7 @@ body {
 
 .slide-number {
   font-family: Lato;
-  color: rgba(244, 244, 244, 0.45);
+  color: rgba(244, 244, 244, 0.6);
   font-size: 118px;
   /* Approximation due to font substitution */
   font-weight: 700;
@@ -104,4 +115,5 @@ body {
   /* Approximation due to font substitution */
   text-align: right;
   position: absolute;
-  right: -10px; }
+  right: -10px;
+  bottom: 10px; }
