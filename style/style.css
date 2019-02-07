@@ -14,10 +14,13 @@ body {
   padding: 0 !important; }
 
 .container {
-  outline: none; }
+  outline: none;
+  max-width: 1050px; }
+
+a {
+  text-decoration: none; }
 
 .main-slider {
-  max-width: 1050px;
   margin: 0 auto;
   -webkit-box-shadow: 0px 18px 48px -8px rgba(0, 0, 0, 0.69);
   -moz-box-shadow: 0px 18px 48px -8px rgba(0, 0, 0, 0.69);
@@ -28,6 +31,9 @@ body {
     padding: 25px; }
   .main-slider .content .star-icons {
     margin: 53px 0 0 52px; }
+    @media screen and (max-width: 767px) {
+      .main-slider .content .star-icons {
+        margin: 25px 0 0 25px; } }
     .main-slider .content .star-icons path {
       -webkit-transition-duration: 0.3s;
       -o-transition-duration: 0.3s;
@@ -44,8 +50,16 @@ body {
     line-height: 104px;
     /* Приближение из-за подстановки шрифтов */
     text-align: left;
-    width: 210px;
+    max-width: 210px;
     margin: 36px 0 36px -63px; }
+    @media screen and (max-width: 1199px) {
+      .main-slider .content h1 {
+        font-size: 90px;
+        line-height: 85px; } }
+    @media screen and (max-width: 767px) {
+      .main-slider .content h1 {
+        font-size: 40px;
+        margin: 0 0 0 25px; } }
   .main-slider .content p {
     font-family: Lato;
     color: #000000;
@@ -56,9 +70,15 @@ body {
     /* Приближение из-за подстановки шрифтов */
     text-align: left;
     opacity: 0.35;
-    width: 232px;
+    max-width: 232px;
     margin: 0 0 22px 0; }
-  .main-slider .content a {
+    @media screen and (max-width: 991px) {
+      .main-slider .content p {
+        margin: 0; } }
+    @media screen and (max-width: 767px) {
+      .main-slider .content p {
+        margin: 0 0 0 25px; } }
+  .main-slider .content .slide-link {
     font-family: Lato;
     text-transform: uppercase;
     text-decoration: none;
@@ -75,7 +95,13 @@ body {
     -webkit-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s; }
-    .main-slider .content a:hover {
+    @media screen and (max-width: 991px) {
+      .main-slider .content .slide-link {
+        margin-bottom: 10px; } }
+    @media screen and (max-width: 767px) {
+      .main-slider .content .slide-link {
+        margin: 0 0 0 25px; } }
+    .main-slider .content .slide-link:hover {
       color: #ac8f8f; }
 
 /*dots style*/
@@ -116,4 +142,5 @@ body {
   text-align: right;
   position: absolute;
   right: -10px;
-  bottom: 10px; }
+  bottom: 10px;
+  z-index: -1; }

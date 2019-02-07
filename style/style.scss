@@ -7,6 +7,22 @@
     url("//db.onlinewebfonts.com/t/2a97ee8e9e3ab9853429d31762897e66.svg#TrumpGothicEastW01-Bold") format("svg");
 }
 
+// @mixin breakpoint($point) {
+//     @if $point == desktop {
+//       @media (min-width: 1200px) { @content ; }
+//    }
+//    @else if $point == tablet {
+//     @media (max-width: 1199px)  { @content ; }
+//  }
+      
+//    @else if $point == mobileonly {
+//       @media (max-width: 767px)  { @content ; }
+//    }
+//  }
+
+
+
+
 body {
     padding: 40px;
 }
@@ -20,14 +36,20 @@ body {
 
 .container {
     outline: none;
+    max-width: 1050px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .main-slider {
-    max-width: 1050px;
+    // max-width: 1050px;
     margin: 0 auto;
     -webkit-box-shadow: 0px 18px 48px -8px rgba(0,0,0,0.69);
     -moz-box-shadow: 0px 18px 48px -8px rgba(0,0,0,0.69);
     box-shadow: 0px 18px 48px -8px rgba(0,0,0,0.69);
+    
 
     .main-photo {
         width: 100%;
@@ -38,6 +60,9 @@ body {
     .content {
         .star-icons {
             margin: 53px 0 0 52px;
+            @media screen and (max-width:767px){
+                margin: 25px 0 0 25px;
+            }
             
             path {
                 transition-duration: 0.3s;
@@ -57,8 +82,17 @@ body {
             line-height: 104px;
             /* Приближение из-за подстановки шрифтов */
             text-align: left;
-            width: 210px;
+            max-width: 210px;
             margin: 36px 0 36px -63px;
+            
+            @media screen and (max-width:1199px){
+                font-size: 90px;
+                line-height: 85px;
+            }
+            @media screen and (max-width:767px){
+                font-size: 40px;
+                margin: 0 0 0 25px;
+            }
         }
 
         p {
@@ -69,11 +103,17 @@ body {
             line-height: 22px;/* Приближение из-за подстановки шрифтов */
             text-align: left;
             opacity: 0.35;
-            width: 232px;
+            max-width: 232px;
             margin: 0 0 22px 0;
+            @media screen and (max-width:991px){
+                margin: 0;
+            }
+            @media screen and (max-width:767px){
+                margin: 0 0 0 25px;
+            }
         }
 
-        a {
+        .slide-link {
             font-family: Lato;
             text-transform: uppercase;
             text-decoration: none;
@@ -86,6 +126,12 @@ body {
             margin: 0;
             outline: none;
             transition-duration: 0.3s;
+            @media screen and (max-width:991px){
+                margin-bottom: 10px;
+            }
+            @media screen and (max-width:767px){
+                margin: 0 0 0 25px;
+            }
 
             &:hover {
                 color:  #ac8f8f;
@@ -108,6 +154,7 @@ body {
         font-size: 14px;/* Приближение из-за подстановки шрифтов */
         font-weight: 700;
         line-height: 56px;/* Приближение из-за подстановки шрифтов */
+        
     }
     &:before {
         content: '0';
@@ -139,4 +186,6 @@ body {
     position: absolute;
     right: -10px;
     bottom: 10px;
+    z-index: -1;
 }
+
