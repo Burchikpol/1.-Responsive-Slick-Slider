@@ -59,7 +59,8 @@ a {
     @media screen and (max-width: 767px) {
       .main-slider .content h1 {
         font-size: 40px;
-        margin: 0 0 0 25px; } }
+        margin: 0 0 0 25px;
+        line-height: 1; } }
   .main-slider .content p {
     font-family: Lato;
     color: #000000;
