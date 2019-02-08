@@ -60,6 +60,9 @@ a {
     .content {
         .star-icons {
             margin: 53px 0 0 52px;
+            a {
+                outline: none;
+            }
             @media screen and (max-width:767px){
                 margin: 25px 0 0 25px;
             }
